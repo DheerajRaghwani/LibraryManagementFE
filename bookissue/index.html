@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Issue Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Issue Management</h1>
+
+        <div class="form-group">
+            <label for="sno">Sno</label>
+            <input type="number" id="sno" placeholder="Enter Sno">
+        </div>
+
+        <div class="form-group">
+            <label for="sid">Student ID</label>
+            <input type="number" id="sid" placeholder="Enter Student ">
+        </div>
+
+        <div class="form-group">
+            <label for="referenceNo">Reference No</label>
+            <input type="text" id="referenceNo" placeholder="Enter Reference No">
+        </div>
+
+        <div class="form-group">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName" placeholder="Enter Book Name">
+        </div>
+
+        <div class="form-group">
+            <label for="noOfBookIssue">No Of Book Issue</label>
+            <input type="number" id="noOfBookIssue" placeholder="Enter No Of Book Issue">
+        </div>
+
+        <div class="form-group">
+            <label for="noOfBookReturn">No Of Book Return</label>
+            <input type="number" id="noOfBookReturn" placeholder="Enter No Of Book Return">
+        </div>
+		
+		 <div class="form-group">
+            <label for="issueBy">Issue By</label>
+            <input type="text" id="issueBy" placeholder="Issued By">
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfIssue">Date Of Issue</label>
+            <input type="date" id="dateOfIssue">
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfReturn">Date Of Return</label>
+            <input type="date" id="dateOfReturn">
+        </div>
+
+        <div class="form-group">
+            <label for="fine">Fine</label>
+            <input type="number" id="fine" placeholder="Enter Fine Amount">
+        </div>
+
+        
+
+        <div class="form-group">
+            <label for="AnyUpdate">Remarks / Updates:</label>
+            <input type="text" id="AnyUpdate" placeholder="Optional">
+        </div>
+
+        <div class="button-group">
+            <button onclick="addBookIssue()">Add</button>
+            <button onclick="updateBookIssue()">Update</button>
+            <button onclick="deleteBookIssue()">Delete</button>
+            <button onclick="getAllBookIssues()">View All</button>
+            <button onclick="goHome()">Home</button>
+        </div>
+
+        <div class="message-box" id="messageBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temp Book Issue Management</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Temp Book Issue Management</h1>
+
+        <div class="form-group">
+            <label for="sno">Sno</label>
+            <input type="number" id="sno" placeholder="Enter Serial Number">
+        </div>
+
+        <div class="form-group">
+            <label for="tempId">Temp ID</label>
+            <input type="number" id="tempId" placeholder="Enter Temporary User ID">
+        </div>
+
+        <div class="form-group">
+            <label for="referenceNo">Reference No</label>
+            <input type="number" id="referenceNo" placeholder="Enter Book Reference No">
+        </div>
+
+        <div class="form-group">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName" placeholder="Enter Book Name">
+        </div>
+
+        <div class="form-group">
+            <label for="noOfBookIssue">No Of Book Issue</label>
+            <input type="number" id="noOfBookIssue" placeholder="Enter No Of Books Issued">
+        </div>
+
+        <div class="form-group">
+            <label for="noOfBookReturn">No Of Book Return</label>
+            <input type="number" id="noOfBookReturn" placeholder="Enter No Of Books Returned">
+        </div>
+
+        <div class="form-group">
+            <label for="issueBy">Issued By</label>
+            <input type="text" id="issueBy" placeholder="Enter Issued By (Teacher)">
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfIssue">Date Of Issue</label>
+            <input type="date" id="dateOfIssue">
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfReturn">Date Of Return</label>
+            <input type="date" id="dateOfReturn">
+        </div>
+
+        <div class="form-group">
+            <label for="fine">Fine</label>
+            <input type="number" id="fine" placeholder="Enter Fine (if any)">
+        </div>
+
+        <div class="form-group">
+            <label for="anyUpdate">Remarks / Updates</label>
+            <input type="text" id="anyUpdate" placeholder="Optional Remarks or Updates">
+        </div>
+
+        <div class="button-group">
+            <button onclick="addTempBookIssue()">Add</button>
+            <button onclick="updateTempBookIssue()">Update</button>
+            <button onclick="deleteTempBookIssue()">Delete</button>
+            
+            <button onclick="getAllTempBookIssues()">View All</button>
+            <button onclick="goHome()">Home</button>
+        </div>
+
+        <div class="message-box" id="messageBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

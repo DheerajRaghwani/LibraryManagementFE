@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794'); /* Library theme */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent box */
+    padding: 25px 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #f1f1f1;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    box-shadow: 0 6px 14px rgba(44, 128, 180, 0.6);
+}
+
+/* ✅ Updated Message box styling - black transparent */
+.message-box {
+    margin: 10px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: none;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    color: #fff; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.message-box.show {
+    display: block;
+    opacity: 1;
+}
