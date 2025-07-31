@@ -1,4 +1,4 @@
-const baseUrl = "https://localhost:7291/API/StudentRecord";
+const baseUrl = "https://librarymanagement-jbdq.onrender.com/API/StudentRecord";
 
 // Utility
 const getInput = id => document.getElementById(id).value;
