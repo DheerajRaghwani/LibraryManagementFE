@@ -1,5 +1,5 @@
 // book.js
-const baseUrl = "https://localhost:7291/API/Book";
+const baseUrl = "https://librarymanagement-jbdq.onrender.com/API/Book";
 
 const getInput = id => document.getElementById(id).value;
 const setInput = (id, value) => document.getElementById(id).value = value;
