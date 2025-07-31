@@ -1,4 +1,4 @@
-const baseUrl = "https://localhost:7291/API/TempPersonRecord";
+const baseUrl = "https://librarymanagement-jbdq.onrender.com/API/TempPersonRecord";
 
 function clearForm() {
     ["tempId", "PersonName", "FatherName", "Address", "Contact", "OtherContact"]
